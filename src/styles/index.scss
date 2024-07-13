@@ -1,0 +1,37 @@
+@import './reset.scss';
+@import './vant-ui.scss';
+
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  color: $font-color;
+  background-color: $bg-color;
+  -webkit-user-select: none; /*webkit浏览器*/
+  user-select: none; /* 禁止选中文本 */
+}
+
+.app-container {
+  height: 100%;
+}
+/* 修改页面加载进度条颜色 */
+#nprogress .bar{
+  background-color: $theme-color !important;
+}
+/* 关闭文本框自动填充账号密码背景色 */
+input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+}
+/* 禁止长按图片选中 */
+img {
+  pointer-events: none;
+}
+/* 修改选中文本的背景色 */
+::selection {
+  background: $theme-color;
+  color: #fff;
+}
