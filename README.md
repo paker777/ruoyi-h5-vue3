@@ -6,9 +6,9 @@ ruoyi-h5-vue3 项目使用了`Vue3.4`、`Vite5`、`Vant4`、`Pinia`等主流技�
 
 ## 截图预览
 
-| ![](.\public\home.png) | ![](.\public\work.png)  |
-| ---------------------- | ----------------------- |
-| ![](.\public\user.png) | ![](.\public\login.png) |
+| ![map](https://raw.githubusercontent.com/paker777/ruoyi-h5-vue3/main/public/home.png) | ![map](https://raw.githubusercontent.com/paker777/ruoyi-h5-vue3/main/public/work.png) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![map](https://raw.githubusercontent.com/paker777/ruoyi-h5-vue3/main/public/user.png) | ![map](https://raw.githubusercontent.com/paker777/ruoyi-h5-vue3/main/public/login.png) |
 
 
 
