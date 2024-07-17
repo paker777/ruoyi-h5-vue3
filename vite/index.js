@@ -22,15 +22,15 @@ export default function createVitePlugins(env) {
     }),
     AutoImport({
       imports: ['vue', 'vue-router', 'pinia'],
-      eslintrc: {
-        enabled: true
-      },
-      dts: 'auto-imports.d.ts',
+      // eslintrc: {
+      //   enabled: true // 生成自动导入api的声明文件，更新时打开
+      // },
+      // dts: 'auto-imports.d.ts', // 生成自动导入组件的声明文件，更新时打开
       resolvers: [VantResolver()]
     }),
     Components({
       dirs: ['src/components'], // 自动导入全局组件
-      dts: 'components.d.ts',
+      dts: 'components.d.ts', // 生成自动导入组件的声明文件
       resolvers: [VantResolver()] // 自动按需导入vant组件
     }),
     createSvgIconsPlugin({
