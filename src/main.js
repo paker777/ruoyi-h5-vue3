@@ -3,8 +3,8 @@ import { createApp } from 'vue'
 import store from '@/store'
 import App from './App.vue'
 import router from './router'
+import directive from './directive' // directive
 import './permission'
-
 // svg图标
 import 'virtual:svg-icons-register'
 import dayjs from 'dayjs'
@@ -20,5 +20,6 @@ app.config.globalProperties.$dayjs = dayjs
 
 app.use(store)
 app.use(router)
+directive(app)
 
 app.mount('#app')
