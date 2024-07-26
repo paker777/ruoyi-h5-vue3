@@ -5,7 +5,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import eslintPlugin from 'vite-plugin-eslint'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import vitePluginStyleVwLoader from 'vite-plugin-style-vw-loader'
+import vitePluginStyleToVw from 'vite-plugin-style-to-vw'
 import viteCompression from 'vite-plugin-compression'
 import { viteVConsole } from 'vite-plugin-vconsole'
 import { VantResolver } from '@vant/auto-import-resolver'
@@ -14,7 +14,9 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 export default function createVitePlugins(env) {
   const { VITE_APP_ENV, VITE_BUILD_COMPRESS } = env
   return [
-    vitePluginStyleVwLoader({ viewportWidth: 750 }), // 该插件需要放在vue()之前
+    vitePluginStyleToVw({
+      allReplace: true
+    }), // 该插件需要放在vue()之前
     vue(),
     eslintPlugin({
       include: ['src/**/*.js', 'src/**/*.vue', 'src/*.js', 'src/*.vue'],

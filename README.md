@@ -30,7 +30,7 @@ vite-plugin-vue-devtools - 项目内置的Vue Devtools，方便开发调试
 
 postcss-px-to-viewport-8-plugin - 移动端适配插件，px自动转换为vw
 
-vite-plugin-style-vw-loader - 解决无法转换行内样式的问题
+vite-plugin-style-to-vw - 解决无法转换行内样式的问题
 
 ## **搭建环境**
 
