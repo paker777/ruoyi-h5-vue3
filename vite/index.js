@@ -7,12 +7,11 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import vitePluginStyleToVw from 'vite-plugin-style-to-vw'
 import viteCompression from 'vite-plugin-compression'
-import { viteVConsole } from 'vite-plugin-vconsole'
 import { VantResolver } from '@vant/auto-import-resolver'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 export default function createVitePlugins(env) {
-  const { VITE_APP_ENV, VITE_BUILD_COMPRESS } = env
+  const { VITE_BUILD_COMPRESS } = env
   return [
     vitePluginStyleToVw({
       allReplace: true
@@ -50,16 +49,6 @@ export default function createVitePlugins(env) {
       algorithm: VITE_BUILD_COMPRESS, // 压缩算法
       ext: VITE_BUILD_COMPRESS === 'gzip' ? '.gz' : '.br', // 文件类型
       threshold: 1024 // 对大于 1kb 的文件进行压缩
-    }),
-    // VConsole 调试工具配置
-    viteVConsole({
-      entry: path.resolve('src/main.js'), // 入口文件，或者可以使用这个配置: [path.resolve('src/main.js')]
-      localEnabled: VITE_APP_ENV === 'development', // 本地是否启用
-      enabled: VITE_APP_ENV === 'development', // 是否启用
-      config: {
-        maxLogNumber: 1000,
-        theme: 'light' // 主题颜色 'dark'|'light'
-      }
     }),
     vueDevTools()
   ]

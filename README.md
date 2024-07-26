@@ -24,8 +24,6 @@ unplugin-auto-import/vite - 无需书写引入ref等api、vant4组件库(自动�
 
 unplugin-vue-components/vite - 自动导入全局组件 vant4组件库(自动按需)
 
-vite-plugin-vconsole - 移动端调试工具
-
 vite-plugin-vue-devtools - 项目内置的Vue Devtools，方便开发调试
 
 postcss-px-to-viewport-8-plugin - 移动端适配插件，px自动转换为vw
