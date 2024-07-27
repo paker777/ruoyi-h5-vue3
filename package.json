@@ -41,7 +41,7 @@
     "vite": "^5.3.4",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-eslint": "^1.8.1",
-    "vite-plugin-style-to-vw": "^1.8.0",
+    "vite-plugin-style-to-vw": "^1.8.5",
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-vue-devtools": "^7.3.6"
   }

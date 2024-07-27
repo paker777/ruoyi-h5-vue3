@@ -14,7 +14,7 @@ export default function createVitePlugins(env) {
   const { VITE_BUILD_COMPRESS } = env
   return [
     vitePluginStyleToVw({
-      allReplace: true
+      attributeList: ['size', 'height', 'width']
     }), // 该插件需要放在vue()之前
     vue(),
     eslintPlugin({
