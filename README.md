@@ -1,6 +1,6 @@
 ## 简介
 
-ruoyi-h5-vue3 项目使用了`Vue3.4`、`Vite5`、`Vant4`、`Pinia`等主流技术开发，后端代理了ruoyi(若依)的接口，写好了登录/个人信息(修改)/修改密码/通知公告 页面，另外页面均可以 `<keep-alive>`，包含 `NavBar`、`TabBar` 的 Layout，集成了 `Axios`、`uCharts`，封装了SvgIcon组件、支持gzip压缩。
+ruoyi-h5-vue3 项目使用了`Vue3.4`、`Vite5`、`Vant4`、`Pinia`等主流技术开发，后端代理了ruoyi(若依)的接口，写好了登录/个人信息(修改)/修改密码 页面，另外页面均可以 `<keep-alive>`，包含 `NavBar`、`TabBar` 的 Layout，封装了SvgIcon组件、支持gzip压缩。
 
 项目使用了Eslint作为代码规范检查工具，自动修复代码格式，保证多人协作开发时的体验和代码一致性。
 
