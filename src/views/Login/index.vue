@@ -75,8 +75,8 @@ getLocal()
       <!-- 中山大学教师端 -->
     </div>
     <div class="login-form">
-      <div class="form-title">欢迎使用oa办公系统</div>
-      <div class="sub-title">登录后继续</div>
+      <div class="form-title">RuoYi</div>
+      <div class="sub-title">请登录</div>
       <van-form :show-error-message="false" @submit="handleLogin" @failed="onFailed">
         <van-field
           v-model.trim="loginForm.username"

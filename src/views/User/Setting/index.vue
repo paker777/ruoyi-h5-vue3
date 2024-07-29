@@ -15,17 +15,16 @@ const handleLogout = () => {
   <div class="app-container">
     <NavBar />
     <van-cell icon="edit" title="修改密码" is-link to="/user/pwd" />
+    <van-cell icon="warning-o" title="关于我们" is-link to="/user/about" />
     <div class="log-out" @click="handleLogout">退出登录</div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .app-container {
-  padding-top: 20px;
-  :deep(.van-cell){
-    margin: 0 0 40px;
-  }
+  margin-top: 20px;
   .log-out{
+    margin-top: 40px;
     height: 100px;
     line-height: 100px;
     text-align: center;

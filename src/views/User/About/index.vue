@@ -12,7 +12,7 @@ import logo from '@/assets/logo.svg'
         :src="logo"
         mode="widthFix"
       />
-      <div class="title">oa办公系统</div>
+      <div class="title">ruoyi</div>
     </div>
     <van-cell title="版本信息" value="1.0.0" />
     <van-cell title="服务热线" value="10000" />

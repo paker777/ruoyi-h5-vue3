@@ -54,7 +54,6 @@ const onOversize = () => {
     </div>
     <div class="item">
       <van-cell icon="edit" title="编辑资料" is-link to="/user/info/edit" />
-      <van-cell icon="warning-o" title="关于我们" is-link to="/user/about" />
     </div>
     <div class="item">
       <van-cell icon="setting-o" title="设置" is-link to="/user/setting" />
